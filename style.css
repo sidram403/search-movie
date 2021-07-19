@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafbfd;
+}
+
+html {
+    font-family: segoe UI;
+    scroll-behavior: smooth;
+    transition: .1s;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    font-family: segoe UI;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+
+    /* background-color: red;*/
+}
+
+.header_container {
+    justify-content: space-between;
+}
+
+.logo {
+    width: 15%;
+    height: 50px;
+    /* background-color: yellow; */
+    font-family: segoe UI;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav {
+    width: 20%;
+    transition: .5s;
+    display: flex;
+    float: left;
+    margin-left: 300px;
+    font-family: segoe UI;
+    font-weight: 600;
+
+
+}
+
+.nav a {
+    clear: left;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    font-family: segoe UI;
+    text-decoration: none;
+    padding: .8em;
+    transition: .3s;
+
+
+}
+
+.nav a:hover {
+    background-color: #f7941d;
+}
+
+.banner {
+    height: 600px;
+    width: 100%;
+    background-image: url('./images/banner3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner_text {
+    height: 100px;
+    width: 50%;
+    /* flex-direction: column; */
+    display: flex;
+    align-items: flex-end;
+
+    background-color: rgba(0, 0, 0, 0.214);
+}
+
+.search {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    font-family: segoe UI;
+    /* background: rgb(255, 197, 91); */
+}
+
+.Search-box {
+    width: 400px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    border-radius: 30px;
+    height: 40px;
+    margin: 10px 20px;
+
+
+}
+
+.button {
+    width: 100px;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    background-color: rgba(34, 119, 187, 1);
+    border: none;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.search_tilte {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.kannada_title {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+
+}
+
+.telugu_title {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.hindi_title {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.tamilu_title {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.english_title {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: segoe UI;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+
+#responsive_menu {
+    font-size: 2em;
+    color: #fff;
+    display: none;
+
+
+}
+
+
+
+#content {
+    margin: 20px 10px;
+    width: 100vw;
+    display: flex;
+    /* justify-content: space-evenly;  */
+    /* flex-wrap: wrap; */
+
+    overflow-y: scroll;
+
+
+
+}
+
+
+
+#content .box {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 32px 20px;
+    background: rgb(255, 211, 130);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+#content .box .poster {
+    width: 70%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+#content .box img {
+    width: 200px;
+    height: 100%;
+}
+
+#content .box .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#content .box .type {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#content .box .moreinfo {
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 120px;
+    height: 35px;
+    background-color: rgba(66, 66, 66, 0.762);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#content .box .moreinfo a {
+    color: white;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #071b4d;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_child {
+    height: 260px;
+    width: 25%;
+    /* background-color: gray; */
+    font-family: segoe UI;
+    display: flex;
+
+    justify-content: center;
+}
+
+.footer_child_1 {
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_child ul li a:hover {
+    color: white;
+}
+
+.first {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.footer_child_4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_container {
+    /* width: 60%; */
+    justify-content: space-between;
+}
+
+.social_icon {
+    height: 50px;
+    width: 50px;
+    /* background-color: white; */
+    background-size: cover;
+}
+
+.si1 {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/facebook-128.png');
+
+}
+
+.si2 {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-google-plus-128.png');
+
+}
+
+.si3 {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png');
+
+}
+
+.si4 {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-03-128.png');
+
+}
+
+.open {
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin: 0 0 0 1.3em;
+    display: block;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+@media(max-width:1100px){
+    .nav {
+        width: 100%;
+        display: block;
+        margin-left: 70%;
+
+    }
+}
+
+
+@media(max-width: 700px) {
+    .header {
+        position: absolute;
+
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner_text {
+        display: flex;
+        margin-right: 50px;
+        width: 90%;
+        height: 10px;
+    }
+
+    .nav {
+        width: 0;
+        overflow-x: hidden;
+        height: 45vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: .5s;
+        display: block;
+        float: left;
+        margin-left: 300px;
+        font-family: segoe UI;
+        font-weight: 600;
+
+
+    }
+
+    .nav a {
+        clear: left;
+        color: white;
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+        padding: .8em;
+        transition: .3s;
+
+
+    }
+
+    .close {
+        float: left;
+        margin: 1em;
+
+    }
+
+    .nav a:hover {
+        background-color: #f7941d;
+    }
+
+    .open {
+        opacity: 1;
+    }
+
+    .active_top_navbar {
+        max-height: 100vh;
+        display: flex;
+    }
+
+    .footer_logo {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 0;
+    }
+
+    .footer_child_1{
+        width: 40px;
+        height: 60px;
+        font-size: 25px;
+        margin-bottom: 40px;
+        
+    }
+
+    .footer_child {
+        display: block;
+        width: 100%;
+        margin: 30px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        
+
+    }
+
+    .footer_container {
+        display: block;
+    }
+
+    .footer_child_4 {
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    .social_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media(max-width: 500px){
+    .nav {
+       width: 0;
+       overflow: hidden;
+       margin-left: 20px;
+    }
+    .footer_child_1{
+        width: 40px;
+        height: 60px;
+        font-size: 25px;
+        margin-bottom: 40px;
+    
+    }
+    .search{
+        margin-right: 20%;
+        font-size: 20px;
+    }
+    .Search input{
+        font-size: 10px;
+    }
+
+    .banner{
+        width: 100%;
+        background-size: contain;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.214);
+        
+    }
+    .overlay{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.214);
+    }
+    .search_tilte{
+        margin-top: 0;
+    }
+    
+    
+}
